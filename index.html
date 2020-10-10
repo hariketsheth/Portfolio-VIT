@@ -179,6 +179,10 @@
                       var sectionID = $(this).attr("data-id");
                       scrollToID('#' + sectionID, 750);
                   });
+     $('#nav-toggle').on('click', function (event) {
+                      event.preventDefault();
+                      $('#main-nav').toggleClass("open");
+                  });
        });
     </script>
   </body>
