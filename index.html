@@ -172,6 +172,14 @@
               </div>
           </div>
 <script src="text/javascript">
+   $(document).ready(function() {
+     
+                  $('.scroll-link').on('click', function(event){
+                      event.preventDefault();
+                      var sectionID = $(this).attr("data-id");
+                      scrollToID('#' + sectionID, 750);
+                  });
+       });
     </script>
   </body>
 </html>
