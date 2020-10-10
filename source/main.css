@@ -448,3 +448,69 @@ nav a::before {
   outline: none;
   cursor: pointer;
 }
+.fourth-content {
+	top: 140%!important;
+  height: 100%;
+	transform: translateY(-140%);
+}
+#contact {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 750px;
+  margin-bottom: 100px;
+  padding: 40px;
+  background-color: rgba(0,0,0,0.9);
+}
+#contact h2 {
+  font-size: 29px;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #fff;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+#contact input,
+#contact textarea {
+  padding-left: 15px;
+  background-color: rgba(0,0,0,0.1);
+  border: 1px solid #fff;
+  border-radius: 0px;
+  height: 40px;
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+#contact input:focus,
+#contact textarea:focus {
+  color: #fff;
+  outline: none;
+  box-shadow: none;
+  border: 1px solid rgba(250,245,178,1);
+  background-color: rgba(0,0,0,0.1);
+}
+#contact textarea {
+  height: 160px;
+  padding: 15px;
+}
+#contact button {
+  border: 2px solid #fff;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 700;
+  background-color: transparent;
+  height: 44px;
+  line-height: 40px;
+  display: inline-block;
+  padding: 0px 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+  outline: none;
+}
+#contact button:hover {
+  background-color: #faf5b2;
+  border-color: #faf5b2;
+  color: #1e1e1e;
+}
+
+
