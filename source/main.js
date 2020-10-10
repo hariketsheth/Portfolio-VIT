@@ -56,3 +56,6 @@ jQuery(document).ready(function($) {
             parent.find('li.active-img').removeClass('active-img').css('left', '0').animate({left: width},600);
             parent.find('li.next-img').attr('class', 'active-img');
         }
+
+	 var ThumbailsWidth = ($('#image-slider').width() - 18.5)/7;
+        $('#thumbnail li').find('img').css('width', ThumbailsWidth);
