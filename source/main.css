@@ -553,3 +553,104 @@ nav a::before {
     text-align: center;
     background-color: #faf5b2;
   }
+	nav {
+    top: 0vh;
+    height: 100px;
+    width: 85vw;
+    margin-left: 15vw;
+  }
+  nav ul {
+    flex-direction: row;
+  }
+  nav ul li {
+    display: inline;
+    margin: 0px;
+  }
+  nav ul li img {
+	width: 35%;
+  }
+  nav ul li em {
+    display: none;
+  }
+  nav a {
+  	text-align: center;
+	  width: 60px;
+	  height: 60px;
+    line-height: 30px;
+    display: inline-block;
+  }
+  .second-slide {
+    top: 140px;
+  }
+  .slide-caption h2 {
+  	font-size: 48px;
+  }
+  .tabs-content {
+    width: auto;
+    text-align: center;
+    margin: 0px 30px;
+    padding: 20px;
+  }
+  .tabs-content p {
+    margin-top: 20px;
+  }
+  #tabs ul li {
+    display: inline-block;
+    margin: 0px 10px;
+  }
+  #tabs ul {
+    float: none;
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: center;
+  }
+  #thumbnail ul li {
+    max-width: 80px;
+    max-height: 80px;
+    margin-left: 10px;
+  }
+  .slide-caption {
+    padding-left: 30px;
+  }
+  #tabs ul li span {
+    width: 60px;
+    height: 60px;
+    font-size: 22px;
+    line-height: 54px;
+  }
+  #tabs ul .ui-tabs-active span {
+    line-height: 60px;
+  }
+  .featured-item {
+    padding: 30px 15px;
+  }
+  .owl-dots {
+    margin-top: 10px;
+    padding-bottom: 30px;
+  }
+  .tabs-content h2 {
+    font-size: 21px;
+  }
+  .third-slide {
+    text-align: center;
+    margin: 0px;
+  }
+  .fourth-slide {
+    margin-left: 0;
+    top: 0;
+    transform: translateY(0%);
+    margin-top: 140px;
+  }
+  .contact-form {
+    padding: 20px;
+  }
+  .contact-form h2 {
+    font-size: 29px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #fff;
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+
+}
