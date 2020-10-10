@@ -44,3 +44,10 @@ jQuery(document).ready(function($) {
 
                 });
             });
+	var width = $('#image-slider').width();
+
+        function nextImage(newIndex, parent){
+            parent.find('li').eq(newIndex).addClass('next-img').css('left', width).animate({left: 0},600);
+            parent.find('li.active-img').removeClass('active-img').css('left', '0').animate({left: -width},600);
+            parent.find('li.next-img').attr('class', 'active-img');
+        }
