@@ -109,3 +109,27 @@ jQuery(document).ready(function($) {
           var displacment = window.innerWidth*currSlide;
           $slides.css('transform', 'translateX(-'+displacment+'px)');
         });
+		var $body = $('body');
+        var currSlide = 0;
+        var $slides = $('.slides');
+        var $slide = $('.slide');
+      
+        $($('nav a')[0]).addClass('active');
+        
+
+        $body.bind('false', mouseEvent);
+    })        
+
+
+        $(window).on("scroll", function() {
+            if($(window).scrollTop() > 100) {
+                $(".header").addClass("active");
+            } else {
+             
+               $(".header").removeClass("active");
+            }
+        });
+
+
+});
+
