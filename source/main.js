@@ -23,7 +23,24 @@ jQuery(document).ready(function($) {
                 }
         });
 
-
-        $(function() {
+       $(function() {
             $( "#tabs" ).tabs();
         });
+
+
+        $(function(){
+        
+            $('#thumbnail li').click(function(){
+                var thisIndex = $(this).index()
+                    
+                if(thisIndex < $('#thumbnail li.active').index()){
+                    prevImage(thisIndex, $(this).parents("#thumbnail").prev("#image-slider"));
+                }else if(thisIndex > $('#thumbnail li.active').index()){
+                    nextImage(thisIndex, $(this).parents("#thumbnail").prev("#image-slider"));
+                }
+                    
+                $('#thumbnail li.active').removeClass('active');
+                $(this).addClass('active');
+
+                });
+            });
