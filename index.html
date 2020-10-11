@@ -8,15 +8,15 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
 
     <title>Hariket Sukeshkumar Sheth</title>
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="source/fontawesome.css">
-    <link rel="stylesheet" href="source/main.css">
-    <link rel="stylesheet" href="source/owl.css">
-        <script src="jquery/jquery.min.js"></script>
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="source/owl.js"></script>
-    <script src="source/jquery-accor.js"></script>
-    <script src="source/main.js"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
 
   </head>
 
@@ -29,10 +29,10 @@
                     </div>
         <nav>
           <ul>
-            <li><a href="#1"><img src="images/1.png" alt=""> <b>Home</b></a></li>
-            <li><a href="#2"><img src="images/2.png" alt=""> <b>About Me</b></a></li>
-            <li><a href="#3"><img src="images/3.png" alt=""> <b>My Projects</b></a></li>
-            <li><a href="#4"><img src="images/4.png" alt=""> <b>Contact Me</b></a></li>
+            <li><a href="#1"><img src="assets/images/icon-1.png" alt=""> <b>Home</b></a></li>
+            <li><a href="#2"><img src="assets/images/icon-2.png" alt=""> <b>About Me</b></a></li>
+            <li><a href="#3"><img src="assets/images/icon-3.png" alt=""> <b>My Projects</b></a></li>
+            <li><a href="#4"><img src="assets/images/icon-4.png" alt=""> <b>Contact Me</b></a></li>
           </ul>
         </nav>
         
@@ -82,45 +82,45 @@
                 </div>
             </div>
         </div>
-     <div class="slide" id="3">
+        <div class="slide" id="3">
             <div class="content third-content">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="owl-carousel owl-theme">
                             <div class="col-md-12">
                                 <div class="featured-item"> 
-                                	<a href=""><img src="images/item-04.jpg" alt=""></a>
+                                	<img src="assets/images/item-01.jpg" alt=""></a>
                                     <div class="down-content">
-                                       <h4>Project</h4>
-                                        <h6>$Des</h6>
+                                        <h4>Project Topic</h4>
+                                        <h6>Project Description</h6>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="featured-item">
-                                    <a href=""><img src="images/item-02.jpg" alt=""></a>
+                                    <img src="assets/images/item-02.jpg" alt=""></a>
                                     <div class="down-content">
-                                              <h4>Project</h4>
-                                        <h6>$Des</h6>
+                                        <h4>Project Topic</h4>
+                                        <h6>Project Description</h6>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="featured-item">
-                                    <img src="images/item-03.jpg" alt="">
+                                    <img src="assets/images/item-03.jpg" alt="">
                                     <div class="down-content">
-                                        <h4>Project</h4>
-                                        <h6>$Des</h6>
+                                        <h4>Project Topic</h4>
+                                        <h6>Project Description</h6>
                                     </div>
                                 </div>
                             </div>
-                          
+                         
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-      <div class="slide" id="4">
+        <div class="slide" id="4">
             <div class="content fourth-content">
                 <div class="container-fluid">
                     <form id="contact" action="" method="post">
@@ -155,16 +155,26 @@
     </div>
 
 
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Additional Scripts -->
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/accordations.js"></script>
+    <script src="assets/js/main.js"></script>
+
     <script type="text/javascript">
         $(document).ready(function() {
 
-           
+            // navigation click actions 
             $('.scroll-link').on('click', function(event){
                 event.preventDefault();
                 var sectionID = $(this).attr("data-id");
                 scrollToID('#' + sectionID, 750);
             });
-         
+            // scroll to top action
             $('.scroll-top').on('click', function(event) {
                 event.preventDefault();
                 $('html, body').animate({scrollTop:0}, 'slow');         
@@ -175,7 +185,7 @@
                 $('#main-nav').toggleClass("open");
             });
         });
-        
+        // scroll function
         function scrollToID(id, speed){
             var offSet = 0;
             var targetOffset = $(id).offset().top - offSet;
