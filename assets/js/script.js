@@ -1,5 +1,5 @@
 $(function () {
-  var roles = ["Student", "VITian", "Pianist", "Coder", "Nature Lover"];
+  var roles = ["Artist", "Student", "VITian", "Pianist", "Coder", "Nature Lover"];
   var count = 0;
   var $typeSpan = $("#intro .content h2 span").typist({
     text: roles[count]
