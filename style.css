@@ -2,31 +2,29 @@
   position: relative;
   height: 100%;
   overflow: hidden;
-  z-index: 1;
+  z-index: 8;
 }
 #intro::after {
   content: "";
   position: absolute;
-  left: 0;
-  right: 0;
+
   top: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 2;
+  
+  z-index: 9;
 }
 
 #intro .content {
-  text-align: center;
+  text-align: right;
   position: absolute;
-  top: 30%;
-  left: 0;
-  right: 0;
+  top: 32%;
+
   overflow: hidden;
-  z-index: 5;
+  z-index: 9;
   color: #fff;
 }
 #intro .content h1 {
-  margin: 20px 0;
+  margin: 0px 0;
   font-size: 4.5em;
   font-weight: 300;
 }
@@ -40,11 +38,13 @@
 }
 
 section {
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 section h2 {
+  margin-left: 750px;
   text-align: center;
-  line-height: 1;
+  margin-right: 0px;
+  line-height: 16;
   padding-bottom: 10px;
   border-bottom: 2px solid #ccf;
 }
