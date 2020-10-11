@@ -1,7 +1,7 @@
 $(function () {
-  var roles = ["Student", "VITian", "Pianist", "Coder"];
+  var roles = ["Artist", "Student", "VITian", "Pianist", "Coder", "Nature Lover"];
   var count = 0;
-  var $typeSpan = $("#intro .content h2 span").typist({
+  var $typeSpan = $("#intro .content1 h2 span").typist({
     text: roles[count]
   });
   setInterval(() => {
