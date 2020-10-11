@@ -349,6 +349,7 @@ nav a::before {
 }
 #image-slider ul li:nth-child(1) {
   background-image: url(../images/full-bg-01.jpg);
+	 filter: brightness(50%);
 }
 #image-slider ul li:nth-child(2) {
   background-image: url(../images/full-bg-02.jpg);
