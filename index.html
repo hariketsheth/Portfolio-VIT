@@ -111,7 +111,7 @@
         <div class="slide" id="4">
             <div class="content fourth-content">
                 <div class="container-fluid">
-                    <form id="contact" action="https://hariketsheth.github.io/Portfolio-VIT">
+                    <form id="contact" >
                         <div class="row">
                           <div class="col-md-12">
                             <h2>Contact me Anytime</h2>
@@ -133,7 +133,12 @@
                           </div>
                           <div class="col-md-12">
                             <fieldset>
-                              <button type="submit" id="form-submit" class="button">Connect with me</button>
+                              <button type="submit" id="form-submit" class="button" onclick="redirect()">Connect with me</button>
+                              <script>
+                                function redirect(){
+                                  location.href="https://hariketsheth.github.io/Portfolio-VIT";
+                                }
+                              </script>
                             </fieldset>
                         </div>
                     </form>
