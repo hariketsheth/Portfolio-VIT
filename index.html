@@ -6,27 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta name="author" content="Hariket Sheth">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
-
     <title>Hariket Sukeshkumar Sheth</title>
-
-    <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-
-    <!-- Additional CSS Files -->
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/owl.css">
-
-  </head>
-
-  <body>
-
-   
+</head>
+<body>
         <div class="logo">
-            <h1>VIT, <br>Chennai</h1>
-            
-                    </div>
+          <h1>VIT, <br>Chennai</h1></div>
         <nav>
           <ul>
             <li><a href="#1"><img src="assets/images/icon-1.png" alt=""> <b>Home</b></a></li>
@@ -153,14 +141,8 @@
             </div>
         </div>
     </div>
-
-
-    <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-
-    <!-- Additional Scripts -->
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/owl.js"></script>
     <script src="assets/js/accordations.js"></script>
     <script src="assets/js/main.js"></script>
@@ -174,18 +156,18 @@
                 var sectionID = $(this).attr("data-id");
                 scrollToID('#' + sectionID, 750);
             });
-            // scroll to top action
+ 
             $('.scroll-top').on('click', function(event) {
                 event.preventDefault();
                 $('html, body').animate({scrollTop:0}, 'slow');         
             });
-            // mobile nav toggle
+    
             $('#nav-toggle').on('click', function (event) {
                 event.preventDefault();
                 $('#main-nav').toggleClass("open");
             });
         });
-        // scroll function
+     
         function scrollToID(id, speed){
             var offSet = 0;
             var targetOffset = $(id).offset().top - offSet;
